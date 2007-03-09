@@ -1,0 +1,11 @@
+Revision history for Perl extension Statistics::ChiSquare.
+
+0.01  Mon Oct 18 12:15:45 1999
+	- original version; created by h2xs 1.16
+
+0.5   Sun Nov 16 2003
+        - maintainer changed from Jon Orwant to David Cantrell
+        - larger table so we can work with bigger data sets
+
+0.6
+	- fixed trivial doc-bug, spotted by Mike Castle
