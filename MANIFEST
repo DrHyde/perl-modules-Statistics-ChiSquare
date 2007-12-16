@@ -4,3 +4,6 @@ Makefile.PL
 MANIFEST
 README
 test.pl
+t/all.t
+t/pod-coverage.t
+t/pod.t
