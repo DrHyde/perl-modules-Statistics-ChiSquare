@@ -126,7 +126,7 @@ on the likelihood that the variation in your data is due to chance.
 See the examples below. 
 
 If you've ever studied elementary genetics, you've probably heard
-about Georg Mendel.  He was a wacky Austrian botanist who discovered
+about Gregor Mendel.  He was a wacky Austrian botanist who discovered
 (in 1865) that traits could be inherited in a predictable fashion.  He
 did lots of experiments with cross breeding peas: green peas, yellow
 peas, smooth peas, wrinkled peas.  A veritable Brave New World of legumes.
