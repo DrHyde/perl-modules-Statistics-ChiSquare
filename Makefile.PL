@@ -1,6 +1,6 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
-    'NAME' => 'Statistics::ChiSquare',
+    NAME => 'Statistics::ChiSquare',
     META_MERGE => {
         license => 'other',
         resources => {
