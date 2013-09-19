@@ -1,9 +1,10 @@
-Changes
+CHANGELOG
 lib/Statistics/ChiSquare.pm
 Makefile.PL
 MANIFEST
 README
-test.pl
 t/all.t
 t/pod-coverage.t
 t/pod.t
+ARTISTIC.txt
+GPL2.txt

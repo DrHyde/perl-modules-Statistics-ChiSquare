@@ -15,8 +15,6 @@ package Statistics::ChiSquare;
 # modify it under the same terms as Perl itself.
 #
 # some sections Copyright 2003 David Cantrell
-# 
-# Version 0.6.  Module list status is "Rdpfp"
 
 use strict;
 use vars qw($VERSION @ISA @EXPORT);
@@ -134,6 +132,10 @@ peas, smooth peas, wrinkled peas.  A veritable Brave New World of legumes.
 But Mendel faked his data.  A statistician by the name of R. A. Fisher used
 the chi-square test to prove it.
 
+=head1 FUNCTIONS
+
+=head2 chisquare
+
 There's just one function in this module: chisquare().  Instead of
 returning the bounds on the confidence interval in a tidy little
 two-element array, it returns an English string.  This was a deliberate
@@ -151,7 +153,6 @@ or
 or 
 
   "I can't handle \d+ choices without a better table."
-
 
 That last one deserves a bit more explanation.  The "modern"
 chi-square test uses a table of values (based on Pearson's
@@ -214,11 +215,17 @@ prints (on my machine)
 
 So much for pseudorandom number generation.
 
-=head1 AUTHORS
+=head1 AUTHORS and LICENCE
 
 Jon Orwant, Readable Publications, Inc; orwant@oreilly.com
 
 Maintained and updated since October 2003 by David Cantrell,
 david@cantrell.org.uk
+
+This software is free-as-in-speech software, and may be used, distributed,
+and modified under the terms of either the GNU General Public Licence
+version 2 or the Artistic Licence. It's up to you which one you use. The
+full text of the licences can be found in the files GPL2.txt and
+ARTISTIC.txt, respectively.
 
 =cut
