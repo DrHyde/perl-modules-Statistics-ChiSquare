@@ -1,5 +1,6 @@
 1.0000  2016-10-21   Add more tests to improve coverage;
                      Fix minor issue found thereby;
+                     Add data from Wikibooks to cover up to 250 degrees of freedom;
                      Document error messages
 
 0.6     2013-09-19   Fixed trivial doc-bug, spotted by Mike Castle
