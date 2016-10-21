@@ -1,21 +1,5 @@
 package Statistics::ChiSquare;
 
-# ChiSquare.pm
-#
-# Jon Orwant, orwant@media.mit.edu
-# David Cantrell, david@cantrell.org.uk
-#
-# 31 Oct 95, revised Mon Oct 18 12:16:47 1999, and again November 2001
-# to fix an off-by-one error
-#
-# Nov 2003, revised to support a larger table
-#
-# Copyright 1995, 1999, 2001 Jon Orwant.  All rights reserved.
-# This program is free software; you can redistribute it and/or
-# modify it under the same terms as Perl itself.
-#
-# some sections Copyright 2003 David Cantrell
-
 use strict;
 use vars qw($VERSION @ISA @EXPORT);
 
@@ -24,7 +8,7 @@ require Exporter;
 @ISA = qw(Exporter);
 @EXPORT = qw(chisquare);
 
-$VERSION = '0.6';
+$VERSION = '1.0000';
 
 my @chilevels = ();
 my @chitable  = ();

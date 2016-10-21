@@ -9,3 +9,4 @@ t/pod.t
 ARTISTIC.txt
 GPL2.txt
 MANIFEST.SKIP
+t/coverage.sh
