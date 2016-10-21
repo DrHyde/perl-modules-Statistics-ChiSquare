@@ -68,8 +68,10 @@ $chitable[30] = [14.95,   18.49,  20.60, 24.48, 29.34, 34.80, 40.26, 43.77, 50.8
 # assume the expected probability distribution is uniform
 sub chisquare {
     my @data = @_;
-    @data = @{$data[0]} if @data == 1 and ref($data[0]);
-    return "There's no data!" unless @data;
+    @data = @{$data[0]} if(@data == 1 and ref($data[0]));
+    return "There's no data!" if(!@data);
+    return "Not enough data!" if(@data == 1);
+    return "Malformed data!" if(grep { /\D/ } @data);
     
     my $degrees_of_freedom = scalar(@data) - 1;
     my ($chisquare, $num_samples, $expected, $i) = (0, 0, 0, 0);
@@ -143,6 +145,10 @@ design choice---many people misinterpret chi-square results, and the
 string helps clarify the meaning. 
 
 The string returned by chisquare() will always match one of these patterns:
+
+  ".*!" (ie strings ending in an exclamation)
+
+various error messages for when you supply Obviously Wrong data.
 
   "There's a >\d+% chance, and a <\d+% chance, that this data is random."
 
