@@ -8,5 +8,8 @@ WriteMakefile(
             bugtracker => 'https://github.com/DrHyde/perl-modules-Statistics-ChiSquare/issues',
         }
     },
-    'VERSION_FROM' => 'lib/Statistics/ChiSquare.pm', # finds $VERSION
+    VERSION_FROM => 'lib/Statistics/ChiSquare.pm', # finds $VERSION
+    PREREQ_PM    => {
+        'Test::More'        => 0.88, # done_testing
+    }
 );
