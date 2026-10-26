@@ -1,8 +1,10 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME => 'Statistics::ChiSquare',
-    META_MERGE => {
+    META_ADD => {
         license => 'open_source',
+},
+META_MERGE => {
         resources => {
             repository => 'https://github.com/DrHyde/perl-modules-Statistics-ChiSquare',
             bugtracker => 'https://github.com/DrHyde/perl-modules-Statistics-ChiSquare/issues',
